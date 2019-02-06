@@ -1,0 +1,60 @@
+body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background: #c85bcd;
+}
+
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1;
+}
+
+h1 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 4em;
+	text-align: center;
+	margin-top: 75px;
+	margin-bottom: 20px;
+}
+
+p {
+	text-align: center;
+	max-width: 60%;
+	line-height: 1.75;
+	margin: auto;
+	font-size: 1.2em;
+}
+
+.btn {
+	margin: 30px;
+}
+
+form {
+	margin-top: 40px;
+}
+
+a {
+	color: purple;
+	font-size: 20px;
+}
+
+#friendModal {
+	text-align: center;
+}
+
+#friendPhoto {
+	max-width: 100%;
+	height: auto;
+}
+
+span {
+	margin-left: 10px;
+	margin-right: 10px;
+	color: green;
+	font-size: 20px;
+
+}
