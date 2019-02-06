@@ -2,239 +2,224 @@
 <html>
 
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Friend Finder</title>
+	<title>Survey - Paddy's Pub Social Network</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
-	<script src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Link static CSS -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo|Roboto" rel="stylesheet">
 </head>
 
+
 <body>
-	<main>
-		<div class="container">
-			<div class="row">
-				<div class="col s12 z-depth-5 mainpanel">
-					<div id="mainpanel-content">
-						<h1>Survey Questions</h1>
-						<div class="divider"></div>
+	<div class="container content">
+		<h1>Survey</h1>
+		<p>Answer these ten question as truthfully as possible. Rank your agreement with the posed question from between 1
+			and 5.With 1 being that you strongly disagree and 5 being strongly agree.</p>
+		<form>
+			<div class="form-group">
+				<input id="name" type="text" class="form-control" placeholder="Name (Required)">
+			</div>
+			<div class="form-group">
+				<input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
+			</div>
 
-						<h3>About You</h3>
+			<!-- Survey Questions -->
 
-						<div class="input-field col s6">
-							<h5>Name (Required)</h5>
-							<i class="material-icons"></i>
-							<input type="text" class="validate" placeholder="Your Name Here" id="userName">
-						</div>
+			<div class="form-group">
+				<label for="question1">You feel like your public face is your true mask.</label>
+				<select class="form-control" id="question1">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
 
-						<div class="input-field col s6">
-							<h5>Link to Photo Image (Required)</h5>
-							<i class="material-icons prefix">picture_in_picture</i>
-							<input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
-						</div>
+			<div class="form-group">
+				<label for="question2">You find that fighting crime is a good way to spend your time.</label>
+				<select class="form-control" id="question2">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
 
-						<!-- Survey Questions -->
-						<div class="input-field col s12">
-							<h3>Question 1</h3>
-							<h5>You feel like your public face is your true mask.</h5>
-							<select id="question1">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
+			<div class="form-group">
+				<label for="question3">The majority of your income comes from robbing banks.</label>
+				<select class="form-control" id="question3">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
 
-						<div class="input-field col s12">
-							<h3>Question 2</h3>
-							<h5>You find that fighting crime is a good way to spend your time.</h5>
-							<select id="question2">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
+			<div class="form-group">
+				<label for="question4">I value human life.</label>
+				<select class="form-control" id="question4">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
 
-						<div class="input-field col s12">
-							<h3>Question 3</h3>
-							<h5>The majority of your income comes from robbing banks.</h5>
-							<select id="question3">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
+			<div class="form-group">
+				<label for="question5">You spend the majority of your time in an insane asylem.</label>
+				<select class="form-control" id="question5">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
 
-						<div class="input-field col s12">
-							<h3>Question 4</h3>
-							<h5>You value human life.</h5>
-							<select id="question4">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
+			<div class="form-group">
+				<label for="question6">I work well with others.</label>
+				<select class="form-control" id="question6">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
 
-						<div class="input-field col s12">
-							<h3>Question 5</h3>
-							<h5>You spend the majority of your time in an insane asylem.</h5>
-							<select id="question5">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
+			<div class="form-group">
+				<label for="question7">I wish to one day find someone to share my life with.</label>
+				<select class="form-control" id="question7">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
 
-						<div class="input-field col s12">
-							<h3>Question 6</h3>
-							<h5>You work well with others.</h5>
-							<select id="question6">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
+			<div class="form-group">
+				<label for="question8">You rarely get carried away by fantasies and ideas.</label>
+				<select class="form-control" id="question8">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
 
-						<div class="input-field col s12">
-							<h3>Question 7</h3>
-							<h5>You wish to one day find someone to share your life with.</h5>
-							<select id="question7">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
+			<div class="form-group">
+				<label for="question9">I think that everyone’s views should be respected regardless of whether they are supported
+					by facts or
+					not.</label>
+				<select class="form-control" id="question9">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
 
-						<div class="input-field col s12">
-							<h3>Question 8</h3>
-							<h5>You rarely get carried away by fantasies and ideas.</h5>
-							<select id="question8">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
+			<div class="form-group">
+				<label for="question10">I feel more energetic after spending time with a group of people.</label>
+				<select class="form-control" id="question10">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+		</form>
 
-						<div class="input-field col s12">
-							<h3>Question 9</h3>
-							<h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or
-								not.</h5>
-							<select id="question9">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
+		<!-- Survey Submit Button -->
+		<div class="text-center">
+			<button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+		</div>
 
-						<div class="input-field col s12">
-							<h3>Question 10</h3>
-							<h5>You feel more energetic after spending time with a group of people.</h5>
-							<select id="question10">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<!-- Survey Submit Button -->
-						<div>
-							<button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton">Submit Responses
-								<i class="material-icons right">send</i>
-							</button>
-						</div>
+		<!-- Modal after survey completion -->
+		<div id="bestFriendModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">Your New Best Friend</h1>
+					</div>
+					<div class="modal-body">
+						<h2 id="bestFriend"></h2>
+						<img id="bestFriendPhoto" src="#">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>
 		</div>
-	</main>
-
-	<!-- Modal Dialog Displaying Closest Friend Match -->
-	<div id="modal1" class="modal">
-		<div class="modal-content">
-			<h4>Closest Friend Match</h4>
-			<div class="divider"></div>
-			<h5 id="userMatch"></h5>
-			<img id="userMatchImage" class="materialboxed" width="650" src="">
-		</div>
-		<div class="modal-footer">
-			<a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
-		</div>
 	</div>
 
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$('select').material_select();
-			$('.modal').modal({
-				dismissible: false, // Modal can be dismissed by clicking outside of the modal
-				opacity: .5, // Opacity of modal background
-				inDuration: 300, // Transition in duration
-				outDuration: 200, // Transition out duration
-				startingTop: '4%', // Starting top style attribute
-				endingTop: '10%' // Ending top style attribute
-			});
-		});
-		// Activate submit button
-		$('#submitButton').on('click', function (event) {
-			event.preventDefault();
-			// Gather user inputs
-			var userInput = {
-				name: $('#userName').val().trim(),
-				photo: $('#userPhoto').val().trim(),
-				scores: [
-					$('#question1').val().trim(),
-					$('#question2').val().trim(),
-					$('#question3').val().trim(),
-					$('#question4').val().trim(),
-					$('#question5').val().trim(),
-					$('#question6').val().trim(),
-					$('#question7').val().trim(),
-					$('#question8').val().trim(),
-					$('#question9').val().trim(),
-					$('#question10').val().trim()
-				]
-			};
-			// console.log('userInput = ' + JSON.stringify(userInput));
-			// Add user inputs to friends list
-			$.post('/api/friends', userInput)
-				.done(function (data) {
-					// console.log('response = ' + JSON.stringify(data));
-					// Set the name and image values of friend match
-					$('#userMatch').html(data.matchName);
-					$("#userMatchImage").attr("src", data.matchImage);
-					// Pop open the modal dialog
-					$('#modal1').modal('open');
-				});
-		});
-	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
+
+<script type="text/javascript">
+	$("#submitBtn").on("click", function (event) {
+		event.preventDefault();
+		// Form validation
+		var valid = true;
+		if ($("#name").val() === "" || $("#photo").val() === "") {
+			valid = false;
+		} else if ($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() ===
+			"empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() ===
+			"empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() ===
+			"empty" || $("#question10").val() === "empty") {
+			valid = false;
+		}
+		if (valid === true) {
+			var newUser = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				scores: [
+					$("#question1").val(),
+					$("#question2").val(),
+					$("#question3").val(),
+					$("#question4").val(),
+					$("#question5").val(),
+					$("#question6").val(),
+					$("#question7").val(),
+					$("#question8").val(),
+					$("#question9").val(),
+					$("#question10").val()
+				]
+			};
+			var currentURL = window.location.origin;
+	
+			$.post(currentURL + "/api/friends", newUser, function (data) {
+				$("#bestFriend").text(data.name);
+				$("#bestFriendPhoto").attr("src", data.photo);
+				$("#bestFriendModal").modal("toggle");
+			});
+		} else {
+			alert("Survey is incomplete!");
+		}
+	});
+</script>
